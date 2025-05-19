@@ -78,6 +78,4 @@ WHERE total_price > 20;
 DELETE FROM orders 
 WHERE product_name = 'Smartwatch Band';
 
--- =========================================
 -- End of Script
--- =========================================
