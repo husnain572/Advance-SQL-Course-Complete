@@ -1,18 +1,18 @@
 SQL commands are commonly divided into 5 main types:
 
-* **DDL — Data Definition Language:** Used to **create or modify database structure**.
+- **DDL — Data Definition Language:** Used to **create or modify database structure**.
   **Examples:** `CREATE`, `ALTER`, `DROP`, `TRUNCATE`
 
-* **DML — Data Manipulation Language:** Used to **add, change, or delete data**.
+- **DML — Data Manipulation Language:** Used to **add, change, or delete data**.
   **Examples:** `INSERT`, `UPDATE`, `DELETE`
 
-* **DQL — Data Query Language:** Used to **retrieve data from the database**.
+- **DQL — Data Query Language:** Used to **retrieve data from the database**.
   **Example:** `SELECT`
 
-* **DCL — Data Control Language:** Used to **manage user permissions and access**.
+- **DCL — Data Control Language:** Used to **manage user permissions and access**.
   **Examples:** `GRANT`, `REVOKE`
 
-* **TCL — Transaction Control Language:** Used to **manage database transactions**.
+- **TCL — Transaction Control Language:** Used to **manage database transactions**.
   **Examples:** `COMMIT`, `ROLLBACK`, `SAVEPOINT`
 
 ### Remember:
