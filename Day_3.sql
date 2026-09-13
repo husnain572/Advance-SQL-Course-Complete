@@ -126,7 +126,6 @@ SELECT *
 FROM orders 
 WHERE product_name ~ 't C[^bv]';
 
-/*
 | Regex    | Meaning                 |
 | -------- | ----------------------- |
 | `a`      | exact letter `a`        |
@@ -139,4 +138,4 @@ WHERE product_name ~ 't C[^bv]';
 | `^`      | beginning of string     |
 | `$`      | end of string           |
 | `~`      | regex match             |
-*/
+
