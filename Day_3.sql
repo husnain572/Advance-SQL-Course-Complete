@@ -125,3 +125,18 @@ WHERE product_name ~ 't C[a-z]';
 SELECT * 
 FROM orders 
 WHERE product_name ~ 't C[^bv]';
+
+/*
+| Regex    | Meaning                 |
+| -------- | ----------------------- |
+| `a`      | exact letter `a`        |
+| `[a-z]`  | any lowercase letter    |
+| `[A-Z]`  | any uppercase letter    |
+| `[0-9]`  | any digit               |
+| `[abc]`  | a OR b OR c             |
+| `[^abc]` | anything except a, b, c |
+| `.`      | any single character    |
+| `^`      | beginning of string     |
+| `$`      | end of string           |
+| `~`      | regex match             |
+*/
