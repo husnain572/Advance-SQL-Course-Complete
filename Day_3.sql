@@ -126,16 +126,39 @@ SELECT *
 FROM orders 
 WHERE product_name ~ 't C[^bv]';
 
-| Regex    | Meaning                 |
-| -------- | ----------------------- |
-| `a`      | exact letter `a`        |
-| `[a-z]`  | any lowercase letter    |
-| `[A-Z]`  | any uppercase letter    |
-| `[0-9]`  | any digit               |
-| `[abc]`  | a OR b OR c             |
-| `[^abc]` | anything except a, b, c |
-| `.`      | any single character    |
-| `^`      | beginning of string     |
-| `$`      | end of string           |
-| `~`      | regex match             |
 
+
+-- =========================================================
+-- REGEX CHEAT SHEET (PostgreSQL)
+-- =========================================================
+
+-- ~  → Regex match
+-- Example:
+-- WHERE product_name ~ 'pattern'
+
+
+-- [a-z]  → Any ONE lowercase letter
+-- [A-Z]  → Any ONE uppercase letter
+-- [0-9]  → Any ONE digit
+
+
+-- [abc]  → ONE character: a OR b OR c
+-- [^abc] → ONE character EXCEPT a, b, or c
+
+
+-- .  → Any ONE character
+-- ^  → Beginning of string
+-- $  → End of string
+
+
+-- =========================================================
+-- Examples
+-- =========================================================
+
+-- 't C' followed by a lowercase letter
+-- t C[a-z]
+
+-- 't C' followed by a character NOT b or v
+-- t C[^bv]
+
+-- =========================================================
